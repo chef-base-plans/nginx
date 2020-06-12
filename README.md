@@ -21,7 +21,7 @@ Examples of this are detailed below.
 Consuming an Nginx service depends on what ports are exposed. Configuration plans wrapping `core/nginx` may expose more than a single port, however this core plan exposes a single http port:
 
 ```
-han start <origin>/<app> --bind webserver:nginx.default
+hab start <origin>/<app> --bind webserver:nginx.default
 ```
 
 The app being started should be configured to read a `port` binding from the webserver.

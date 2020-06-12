@@ -1,8 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+#
 
 exec 2>&1
 
-while true; do
-  echo "Sleeping ..."
-  sleep 10
-done
+exec nginx -c {{pkg.svc_config_path}}/nginx.conf
